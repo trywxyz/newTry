@@ -1,0 +1,98 @@
+/* App Layout */
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+/* Container for profile and sidebar */
+.container {
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column; /* Coloca o conteúdo de forma vertical */
+    background-color: #0707078a;
+    border-radius: 15px;
+    width: 450px;
+    height: 650px;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra sutil */
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row; /* Mudado para linha para alinhar a foto à esquerda */
+    border-radius: 12px;
+    position: relative;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px; /* Espaço entre a foto e o texto */
+}
+
+.profile-image {
+    width: 140px; /* Tamanho maior da imagem */
+    border-radius: 50%;
+    margin-right: 20px; /* Espaço entre a foto e o conteúdo */
+    margin-top: -160px;
+    margin-left: -30px;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h6 {
+    font-size: 18px;
+    color: #b9bbbe;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #b9bbbe;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.edit-profile-btn {
+    padding: 10px 25px;
+    background-color: #7289da;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #5d72c4;
+}
+
+/* Banner */
+.profile-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
